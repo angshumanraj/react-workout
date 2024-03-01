@@ -19,7 +19,11 @@ app.use((req,res,next)=>{
 })
 //Routes
 app.use('/api/workouts',workoutRoutes)
-
+app.get(
+    "/",(req,res)=>{
+        res.json("Hello")
+    }
+)
 //connect to database
 moongose.connect(process.env.MON_URL)
     .then(()=>{
