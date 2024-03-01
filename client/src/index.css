@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+:root{
+  --primary:rgb(0, 0, 0);
+  --error:red;
+
+}
+
+body{
+  background: rgba(33, 60, 177, 0.849);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  background:rgb(236, 236, 235);
+}
+
+header.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a{
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.home{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details span{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #333;
+
+}
+.workout-details p{
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+.workout-details h4{
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+.workout-details{
+  background-color: #eef09b;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+div.error{
+  padding: 10px;
+  background: #ffffff;
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+/* Add this CSS to your existing stylesheet */
+form.create {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  max-height: 400px; /* Adjust the width as needed */
+  margin: 20 auto;
+  padding: 20px;
+  background-color: #eef09b;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+form.create h3 {
+  margin-bottom: 20px;
+}
+
+form.create label {
+  font-weight: bold;
+}
+
+form.create input[type="text"],
+form.create input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+form.create button {
+  background-color: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+input.error{
+  border:1px solid var(--error)
+ }
+
+
